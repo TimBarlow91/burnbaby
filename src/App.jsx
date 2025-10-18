@@ -1,16 +1,21 @@
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import Pillars from './components/Pillars'
+import QuoteBanner from './components/QuoteBanner'
+import Footer from './components/Footer'
+
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-white text-center p-8">
-      {/* Hero Section */}
-      <h1 className="text-6xl font-bold text-[#FF007F] mb-4">BURNBABY™</h1>
-      <p className="text-2xl text-black mb-8">“Feminine. Fierce. Fit.”</p>
-
-      {/* CTA Button */}
-      <button className="bg-gradient-to-r from-pink-500 to-orange-500 text-white font-bold px-6 py-3 rounded-lg hover:from-pink-600 hover:to-orange-600 transition">
-        Join the Challenge 🔥
-      </button>
+    <div className="font-sans">
+      <Navbar />
+      <main className="mt-16"> {/* offset for fixed navbar */}
+        <Hero />
+        <Pillars />
+        <QuoteBanner />
+      </main>
+      <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
