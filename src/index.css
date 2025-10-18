@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-hot-pink: #FF007F;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-rose-gold: #B76E79;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
