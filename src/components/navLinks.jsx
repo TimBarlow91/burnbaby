@@ -1,8 +1,8 @@
 export const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Programs', href: '#programs' },
-    { name: 'Packages', href: '#packages' },
-    { name: 'Testimonials', href: '#testimonials' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'About', href: '../pages/About.jsx' },
+    { name: 'Programs', href: '../pages/Programs.jsx' },
+    { name: 'Packages', href: '../pages/Packages.jsx' },
+    { name: 'Testimonials', href: '../pages/Testimonials.jsx' },
+    { name: 'Contact', href: '../pages/Contact.jsx' },
 ];
