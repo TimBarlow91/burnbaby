@@ -1,16 +1,10 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-
 export default function Packages() {
     return (
-        <div className="font-sans min-h-screen flex flex-col">
-            <Navbar />
-            <main className="flex-grow flex items-center justify-center">
-                <h1 className="text-3xl font-bold text-[#FF007F]">
-                    Packages Page – Under Construction 🚧
-                </h1>
-            </main>
-            <Footer />
+        <div className="min-h-[60vh] flex flex-col items-center justify-center p-8 text-center bg-white text-black">
+            <h1 className="text-4xl font-bold mb-4">Packages Page</h1>
+            <p className="text-lg">
+                This page is currently under construction. Stay tuned for updates!
+            </p>
         </div>
     );
 }

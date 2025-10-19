@@ -9,10 +9,14 @@
   --color-rose-gold: #B76E79;
 }
 
+html,
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: var(--color-black);
+  margin: 0;
+  padding: 0;
+  height: 100%;
   background-color: var(--color-white);
+  color: var(--color-black);
+  font-family: 'Montserrat', sans-serif;
 }
 
 html {
