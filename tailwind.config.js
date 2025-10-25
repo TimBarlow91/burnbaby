@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        burnbaby: ['"Bodoni Moda"', 'serif'],
+        body: ['Poppins', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

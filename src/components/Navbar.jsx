@@ -1,16 +1,21 @@
 import { useState } from 'react'
 import { HiMenu, HiX } from 'react-icons/hi'
+import { FaFire } from "react-icons/fa";
 import { navLinks } from './navLinks'
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <nav className="w-full bg-black/95 text-white fixed top-0 left-0 z-50 shadow-[0_0_20px_#ff007f40] border-b-[1.5px] border-[#ff007f]/60 shadow-pink-500/30">
+        <nav className="w-full bg-black/95 text-white fixed top-0 left-0 z-50 border-b-[1.5px] border-[#ff007f]/60 shadow-[0_0_20px_#ff007f40]">
             <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
+
                 {/* Logo */}
-                <div className="text-2xl font-bold text-[#FF007F] drop-shadow-[0_0_8px_#ff007f]">
-                    BURNBABY™
+                <div className="flex items-center font-extrabold select-none text-[#FF007F] neon-text">
+                    <span className="text-xl sm:text-2xl md:text-3xl">BURN</span>
+                    <FaFire className="mx-1 text-[#FF007F] text-xl sm:text-2xl md:text-3xl flame-static-glow animate-flame-pulse" />
+                    <span className="text-xl sm:text-2xl md:text-3xl">BABY</span>
+                    <span className="ml-1 text-xs sm:text-sm md:text-base align-top">™</span>
                 </div>
 
                 {/* Desktop Menu */}
@@ -19,7 +24,8 @@ export default function Navbar() {
                         <li key={link.name} className="flex items-center">
                             <a
                                 href={link.href}
-                                className="px-5 transition hover:text-[#FF007F] hover:drop-shadow-[0_0_8px_#ff007f]"
+                                className="px-5 text-white [text-shadow:_0_0_8px_#ff007f80]
+                transition hover:text-[#FF007F] hover:drop-shadow-[0_0_15px_#ff007f]"
                             >
                                 {link.name}
                             </a>
@@ -50,7 +56,8 @@ export default function Navbar() {
                             <a
                                 href={link.href}
                                 onClick={() => setIsOpen(false)}
-                                className="block py-2 hover:text-[#FF007F] hover:drop-shadow-[0_0_6px_#ff007f]"
+                                className="block py-2 text-white [text-shadow:_0_0_8px_#ff007f80]
+                hover:text-[#FF007F] hover:drop-shadow-[0_0_15px_#ff007f]"
                             >
                                 {link.name}
                             </a>

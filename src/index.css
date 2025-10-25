@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Poppins:wght@300;400;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,10 +18,76 @@ body {
   height: 100%;
   background-color: var(--color-black);
   color: var(--color-white);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Bodoni Moda', serif;
   transition: all 0.3s ease;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Bodoni Moda', serif;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+/* Base Glow for Flame */
+.flame-static-glow {
+  filter:
+    drop-shadow(0 0 6px #ff007f) drop-shadow(0 0 12px #ff4fa3);
+}
+
+/* Flame Pulse Animation */
+@keyframes flame-pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+    filter:
+      drop-shadow(0 0 14px #ff007f) drop-shadow(0 0 26px #ff4fa3) drop-shadow(0 0 38px #ff007f);
+  }
+
+  50% {
+    transform: scale(1.12);
+    filter:
+      drop-shadow(0 0 22px #ff007f) drop-shadow(0 0 36px #ff4fa3) drop-shadow(0 0 50px #ff007f);
+  }
+}
+
+.animate-flame-pulse {
+  animation: flame-pulse 2.5s ease-in-out infinite;
+}
+
+/* Logo Text Glow */
+.neon-text {
+  text-shadow:
+    0 0 4px #f7f2f4,
+    0 0 8px #ff4fa3,
+    0 0 12px #ff007f;
+}
+
+.neon-strong {
+  text-shadow:
+    0 0 12px #ff007f,
+    0 0 26px #ff4fa3,
+    0 0 40px #ff007f,
+    0 0 60px #ff4fa3;
+}
+
+/* Glow for Hero h1 */
+.hero-glow {
+  text-shadow:
+    0 0 3px #f8f7f7,
+    0 0 8px #ff4fa3,
+    0 0 16px #ff007f;
+}
+
+.hero-flame-glow {
+  filter:
+    drop-shadow(0 0 2px #ff007f) drop-shadow(0 0 3px #ff4fa3);
 }
