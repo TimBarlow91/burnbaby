@@ -8,12 +8,11 @@ import Packages from './pages/Packages';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
 
-
 export default function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-black text-white">
       <Navbar />
-      <main className="flex-1 pt-[80px] bg-white">
+      <main className="flex-1 pt-[80px]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
