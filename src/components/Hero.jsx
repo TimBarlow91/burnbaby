@@ -8,7 +8,10 @@ export default function Hero() {
                 autoPlay
                 loop
                 muted
-                className="absolute w-full h-full object-cover opacity-30"
+                playsInline
+                preload="metadata"
+                className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none transform-gpu"
+                style={{ WebkitTransform: 'translateZ(0)' }}  // helps some mobile browsers
             >
                 <source src="/public/BurnbabyFlames.mp4" type="video/mp4" />
             </video>
