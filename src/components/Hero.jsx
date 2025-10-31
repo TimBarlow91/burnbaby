@@ -2,22 +2,25 @@ import { FaFire } from 'react-icons/fa';
 
 export default function Hero() {
     return (
-        <section className="relative w-full min-h-[80vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-black/90 to-[#1a0010] overflow-hidden py-20 sm:py-24 md:py-28">
+        <section className="relative w-full min-h-[80vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-black/90 to-[#1a0010] overflow-hidden py-20 sm:py-24 md:py-28 mx-auto max-w-[100vw]">
             {/* Background video */}
             <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                preload="metadata"
-                className="absolute inset-0 w-full h-full object-cover opacity-20 pointer-events-none transform-gpu"
-                style={{ WebkitTransform: 'translateZ(0)' }}  // helps some mobile browsers
+                preload="auto"
+                poster="/placeholder.jpg" // add a 1x1 black or flame preview image in /public
+                width="1920"
+                height="1080"
+                className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none transform-gpu"
+                style={{ WebkitTransform: 'translateZ(0)' }}
             >
-                <source src="/public/BurnbabyFlames.mp4" type="video/mp4" />
+                <source src="/BurnbabyFlames.mp4" type="video/mp4" />
             </video>
 
             {/* Content */}
-            <div className="relative z-10 px-6 max-w-3xl mx-auto space-y-8 pb-10 sm:pb-14 md:pb-20">
+            <div className="relative z-10 px-6 max-w-[95%] sm:max-w-3xl mx-auto space-y-8 pb-10 sm:pb-14 md:pb-20 text-center">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-[#FF007F] hero-glow flex items-center justify-center gap-2 select-none">
                     <span>BURN</span>
                     <FaFire className="text-[#FF007F] text-4xl sm:text-5xl md:text-6xl hero-flame-glow" />
