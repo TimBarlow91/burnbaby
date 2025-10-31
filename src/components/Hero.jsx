@@ -18,7 +18,7 @@ export default function Hero() {
             </video>
 
             {/* Content */}
-            <div className="relative z-10 px-6 max-w-3xl mx-auto space-y-8 pb-10 sm:pb-14 md:pb-20">
+            <div className="relative z-10 mx-auto space-y-8 pb-10 sm:pb-14 md:pb-20 text-center flex flex-col items-center justify-center w-full max-w-[90%] sm:max-w-3xl px-4">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-[#FF007F] hero-glow flex items-center justify-center gap-2 select-none">
                     <span>BURN</span>
                     <FaFire className="text-[#FF007F] text-4xl sm:text-5xl md:text-6xl hero-flame-glow" />
