@@ -10,7 +10,7 @@ export default function Hero() {
                 muted
                 className="absolute w-full h-full object-cover opacity-30"
             >
-                <source src="/fire-loop.mp4" type="video/mp4" />
+                <source src="/public/BurnbabyFlames.mp4" type="video/mp4" />
             </video>
 
             {/* Content */}

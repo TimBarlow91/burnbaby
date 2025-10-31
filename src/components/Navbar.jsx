@@ -11,11 +11,10 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
 
                 {/* Logo */}
-                <div className="flex items-center font-extrabold select-none text-[#FF007F] neon-text">
+                <div className="flex items-center font-extrabold select-none text-[#FF007F]">
                     <span className="text-xl sm:text-2xl md:text-3xl">BURN</span>
-                    <FaFire className="mx-1 text-[#FF007F] text-xl sm:text-2xl md:text-3xl flame-static-glow animate-flame-pulse" />
+                    <FaFire className="mx-1 text-[#FF007F] text-xl sm:text-2xl md:text-3xl" />
                     <span className="text-xl sm:text-2xl md:text-3xl">BABY</span>
-                    {/* ™ stays original size */}
                     <span className="ml-[3px] text-[1em] sm:text-[1.6em] md:text-[1.4em] align-super tracking-tight opacity-85">™</span>
                 </div>
 
