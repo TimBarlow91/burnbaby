@@ -2,7 +2,7 @@ import { FaFire } from 'react-icons/fa';
 
 export default function Hero() {
     return (
-        <section className="relative w-full min-h-[80vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-black/90 to-[#1a0010] overflow-hidden py-20 sm:py-24 md:py-28 mx-auto max-w-[100vw]">
+        <section className="relative w-screen min-h-[80vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-black/90 to-[#1a0010] overflow-hidden py-20 sm:py-24 md:py-28 mx-auto">
             {/* Background video */}
             <video
                 autoPlay
@@ -10,10 +10,10 @@ export default function Hero() {
                 muted
                 playsInline
                 preload="auto"
-                poster="/placeholder.jpg" // add a 1x1 black or flame preview image in /public
+                poster="/placeholder.jpg"
                 width="1920"
                 height="1080"
-                className="absolute inset-0 w-full h-full object-cover opacity-25 pointer-events-none select-none transform-gpu"
+                className="absolute inset-0 w-screen h-full object-cover opacity-25 pointer-events-none select-none transform-gpu"
                 style={{ WebkitTransform: 'translateZ(0)' }}
             >
                 <source src="/BurnbabyFlames.mp4" type="video/mp4" />
