@@ -12,7 +12,7 @@ export default function App() {
   return (
     <div className="flex flex-col min-h-screen bg-black text-white">
       <Navbar />
-      <main className="flex-1 pt-[80px] flex flex-col items-center text-center w-full overflow-x-hidden px-4 sm:px-0">
+      <main className="flex-1 pt-[80px] w-full overflow-x-hidden">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

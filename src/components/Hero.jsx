@@ -2,7 +2,8 @@ import { FaFire } from 'react-icons/fa';
 
 export default function Hero() {
     return (
-        <section className="relative w-screen min-h-[80vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-black/90 to-[#1a0010] overflow-hidden py-20 sm:py-24 md:py-28 mx-auto">
+        <section className="relative vw-fill min-h-[80vh] flex flex-col items-center justify-center text-center bg-gradient-to-b from-black via-black/90 to-[#1a0010] overflow-hidden py-20 sm:py-24 md:py-28">
+
             {/* Background video */}
             <video
                 autoPlay
@@ -10,17 +11,14 @@ export default function Hero() {
                 muted
                 playsInline
                 preload="auto"
-                poster="/placeholder.jpg"
-                width="1920"
-                height="1080"
-                className="absolute inset-0 w-screen h-full object-cover opacity-25 pointer-events-none select-none transform-gpu"
-                style={{ WebkitTransform: 'translateZ(0)' }}
+                poster="/placeholder.jpg"            // optional but recommended
+                className="absolute top-0 left-1/2 -translate-x-1/2 w-[100vw] h-full object-cover opacity-20 pointer-events-none select-none"
             >
                 <source src="/BurnbabyFlames.mp4" type="video/mp4" />
             </video>
 
             {/* Content */}
-            <div className="relative z-10 px-6 max-w-[95%] sm:max-w-3xl mx-auto space-y-8 pb-10 sm:pb-14 md:pb-20 text-center">
+            <div className="relative z-10 px-6 max-w-3xl mx-auto space-y-8 pb-10 sm:pb-14 md:pb-20">
                 <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-[#FF007F] hero-glow flex items-center justify-center gap-2 select-none">
                     <span>BURN</span>
                     <FaFire className="text-[#FF007F] text-4xl sm:text-5xl md:text-6xl hero-flame-glow" />
@@ -36,7 +34,6 @@ export default function Hero() {
                     Join The Challenge!
                 </button>
 
-                {/* New paragraphs below button */}
                 <p className="text-base sm:text-lg text-gray-300 mt-6 drop-shadow-[0_0_5px_#ff007f50]">
                     Your transformation starts today — no shortcuts, no excuses.
                 </p>
@@ -45,5 +42,5 @@ export default function Hero() {
                 </p>
             </div>
         </section>
-    )
+    );
 }
