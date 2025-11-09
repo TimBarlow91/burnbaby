@@ -17,10 +17,10 @@ export default function QuoteBanner() {
                     loop
                     muted
                     playsInline
-                    preload="auto"
+                    preload="metadata"
                     className="absolute inset-0 w-full h-full object-cover opacity-35"
                 >
-                    <source src="/BurnbabyFlames.mp4" type="video/mp4" />
+                    <source src="/BurnbabyFlamesSmall.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-gradient-to-r from-[#ff007f40] to-[#ff4fa340] mix-blend-soft-light"></div>
                 <span className="relative z-10">Start Your Burn Journey</span>

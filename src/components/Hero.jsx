@@ -10,7 +10,7 @@ export default function Hero() {
                 loop
                 muted
                 playsInline
-                preload="none"
+                preload="metadata"
                 poster="/Squat_image.png"
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-[100vw] h-full object-cover opacity-20 pointer-events-none select-none"
             >
@@ -40,10 +40,10 @@ export default function Hero() {
                         loop
                         muted
                         playsInline
-                        preload="auto"
+                        preload="metadata"
                         className="absolute inset-0 w-full h-full object-cover opacity-35"
                     >
-                        <source src="/BurnbabyFlames.mp4" type="video/mp4" />
+                        <source src="/BurnbabyFlamesSmall.mp4" type="video/mp4" />
                     </video>
 
                     <div className="absolute inset-0 bg-gradient-to-r from-[#ff007f40] to-[#ff4fa340] mix-blend-soft-light"></div>

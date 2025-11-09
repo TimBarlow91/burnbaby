@@ -82,10 +82,10 @@ export default function About() {
                         loop
                         muted
                         playsInline
-                        preload="none"
+                        preload="metadata"
                         className="absolute inset-0 w-full h-full object-cover opacity-35"
                     >
-                        <source src="/BurnbabyFlames.mp4" type="video/mp4" />
+                        <source src="/BurnbabyFlamesSmall.mp4" type="video/mp4" />
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-r from-[#ff007f40] to-[#ff4fa340] mix-blend-soft-light"></div>
                     <span className="relative z-10">Explore Programs</span>
