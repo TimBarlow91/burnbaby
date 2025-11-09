@@ -11,10 +11,10 @@ export default function Hero() {
                 muted
                 playsInline
                 preload="auto"
-                poster="/placeholder.jpg"            // optional but recommended
+                poster="/placeholder.jpg"
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-[100vw] h-full object-cover opacity-20 pointer-events-none select-none"
             >
-                <source src="/BurnbabyFlames.mp4" type="video/mp4" />
+                <source src="/animated_squat.mp4" type="video/mp4" />
             </video>
 
             {/* Content */}
@@ -30,8 +30,26 @@ export default function Hero() {
                     A 28-Day Reset for Women Who Want It All. Heal your gut, tone your body, ignite your fire.
                 </p>
 
-                <button className="bg-gradient-to-r from-[#FF007F] to-[#ff4fa3] text-white font-bold px-10 py-4 rounded-lg shadow-[0_0_12px_#ff007f80] hover:shadow-[0_0_18px_#ff007f] hover:scale-105 transition-all duration-300">
-                    Join The Challenge!
+                <button
+                    className="relative inline-flex items-center justify-center overflow-hidden rounded-lg px-10 py-4 font-bold text-white text-lg glow-pulse transition-all duration-300 ease-in-out hover:scale-105"
+                    style={{ fontFamily: "'Poppins', sans-serif", textShadow: '0 0 6px #ff4fa3' }}
+                >
+                    {/* Video background */}
+                    <video
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        preload="auto"
+                        className="absolute inset-0 w-full h-full object-cover opacity-35"
+                    >
+                        <source src="/BurnbabyFlames.mp4" type="video/mp4" />
+                    </video>
+
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#ff007f40] to-[#ff4fa340] mix-blend-soft-light"></div>
+
+                    {/* Text */}
+                    <span className="relative z-10">Join The Challenge!</span>
                 </button>
 
                 <p className="text-base sm:text-lg text-gray-300 mt-6 drop-shadow-[0_0_5px_#ff007f50]">

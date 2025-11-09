@@ -211,3 +211,26 @@ button,
   font-weight: 600;
   letter-spacing: 0.3px;
 }
+
+/* 🔥 Glow pulse animation for CTA buttons */
+@keyframes glowPulse {
+
+  0%,
+  100% {
+    box-shadow: 0 0 12px #ff007f60, 0 0 24px #ff4fa380;
+    text-shadow: 0 0 6px #ff4fa3, 0 0 12px #ff007f;
+  }
+
+  50% {
+    box-shadow: 0 0 20px #ff007f90, 0 0 40px #ff4fa3b0;
+    text-shadow: 0 0 12px #ff4fa3, 0 0 24px #ff007f;
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+.glow-pulse:hover {
+  animation: glowPulse 2.5s ease-in-out infinite;
+}
