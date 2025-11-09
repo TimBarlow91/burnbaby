@@ -10,8 +10,8 @@ export default function Hero() {
                 loop
                 muted
                 playsInline
-                preload="auto"
-                poster="/placeholder.jpg"
+                preload="none"
+                poster="/Squat_image.png"
                 className="absolute top-0 left-1/2 -translate-x-1/2 w-[100vw] h-full object-cover opacity-20 pointer-events-none select-none"
             >
                 <source src="/animated_squat.mp4" type="video/mp4" />
